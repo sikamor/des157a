@@ -6,8 +6,12 @@ body{
     margin: auto;
 }
 
-.borderbox{
+#borderbox{
+    position: relative;
     border: 1px solid whitesmoke;
+    width: 1200px;
+    height: 741.6564px;
+    margin-top: 10px;
 }
 
 p{
@@ -15,22 +19,91 @@ p{
     top: 559.5px;
 }
 
-.line1{
+#finaltext{
     position: absolute;
-    top: 0px;
-    right: 741.6564px;
-    border-left: 5px solid whitesmoke;
-    height: 5px;
-    animation: grow1 3s forwards;
+    top: 175.762px;
+    left: 863.0305px;
+    color: whitesmoke;
+    animation: changeColour ease 10s;
+    animation-fill-mode: forwards;
 }
 
-.line2{
+#line1{
+    position: absolute;
+    top: 0px;
+    left: 741.6564px;
+    border-left: 5px solid whitesmoke;
+    height: 0px;
+    animation: grow1 3s;
+    animation-fill-mode:forwards;
+}
+
+#line2{
     position: absolute;
     top: 283.87px;
-    right: 741.6564px;
+    left: 741.6564px;
     border-top: 5px solid whitesmoke;
-    width: 5px;
-    animation: grow2 3s backwards;
+    width: 0px;
+    animation: grow2 3s;
+    animation-fill-mode:forwards;
+    animation-delay:1s;
+}
+
+#line3{
+    position: absolute;
+    /*top: 0px;*/
+    top: 283.875px;
+    left: 917.418px;
+    border-left: 5px solid whitesmoke;
+    height: 0px;
+    animation: grow3 3s;
+    animation-fill-mode:forwards;
+    animation-delay:2s;
+}
+
+#line4{
+    position: absolute;
+    top: 175.762px;
+    /*left: 741.6564px;*/
+    left: 917.4184px;
+    border-top: 5px solid whitesmoke;
+    width: 0px;
+    animation: grow4 3s;
+    animation-fill-mode:forwards;
+    animation-delay:3s;
+}
+
+#line5{
+    position: absolute;
+    top: 175.762px;
+    left: 848.0305px;
+    border-left: 5px solid whitesmoke;
+    height: 0px;
+    animation: grow5 3s;
+    animation-fill-mode:forwards;
+    animation-delay:4s;
+}
+
+#line6{
+    position: absolute;
+    top: 214.4455px;
+    left: 848.0305px;
+    border-top: 5px solid whitesmoke;
+    width: 0px;
+    animation: grow6 3s;
+    animation-fill-mode:forwards;
+    animation-delay:5s;
+}
+
+#final{
+    position: absolute;
+    top: 180.762px;
+    left: 853.0305px;
+    background-color: greenyellow;
+    width: 65.9932px;
+    height: 33.6627px;
+    animation: fadeIn ease 10s;
+    animation-fill-mode:forwards;
 }
 
 @keyframes grow1{
@@ -42,5 +115,59 @@ p{
 @keyframes grow2{
     100%{
         width: 459.5203px;
+    }
+}
+
+@keyframes grow3{
+    100%{
+        height: 283.875px;
+        top: 0px;
+    }
+}
+
+@keyframes grow4{
+    100%{
+        width: 174.0647px;
+        left: 741.6564px;
+    }
+}
+
+@keyframes grow5{
+    100%{
+        height: 106.3741px;
+    }
+}
+
+@keyframes grow6{
+    100%{
+        width: 67.6906px;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+
+    75%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes changeColour{
+    0%{
+        color: whitesmoke;
+    }
+
+    75%{
+        color: whitesmoke;
+    }
+
+    100%{
+        color: black;
     }
 }
