@@ -142,6 +142,18 @@ p{
     border-left: 1px solid whitesmoke;
 }
 
+#nav-item{
+    display: flex;
+    margin-right:auto;
+    border-left: 1px solid whitesmoke;
+}
+
+#nav-item{
+    display: flex;
+    margin-right:auto;
+    border-left: 1px solid whitesmoke;
+}
+
 .navigation-all{
     position: relative;
 }

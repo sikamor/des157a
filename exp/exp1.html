@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>experiment 1</title>
+</head>
+<body>
+    <h1>counter that detects division by 3 and if a number can be multiplied by itself and still be under 100</h1>
+    <script>
+        //counter that identifies number that when squared are under 100 and if any number can be divided by three//
+        var choice = prompt("are you ready to count? answer yes or no","").toLowerCase();
+
+        if(choice == "yes"){
+
+        for (var i = 0; i <= 100; i++){
+            if(i % 3 == 0 && i * i < 100 && i * i / 3){
+                console.log(`this number, ${i}, can be divided by three, when it is squared it is ${i*i}, and this square can also be divided by three`)
+            }
+            
+            else if(i % 3 == 0 && i * i < 100){
+                console.log(`this number, ${i}, can be divided by three, and when it is squared it is ${i*i}`)
+            }
+
+            else if(i % 3 == 0){
+                console.log(`this number, ${i}, can be divided by three`);
+            }
+            else if(i * i < 100){
+                console.log(`this number, ${i} squared is ${i*i}`);
+            }
+            else{
+                console.log(i);
+            }
+        }
+
+        }
+
+        else{
+            console.log("you are not ready...")
+        }
+
+    </script>
+</body>
+</html>
