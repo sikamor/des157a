@@ -1,9 +1,10 @@
 body{
-    background-color: black;
+    background-color: 	#303030;
     color: whitesmoke;
     width: 1200px;
     display: flex;
     margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 #borderbox{
@@ -17,15 +18,17 @@ body{
 p{
     position: absolute;
     top: 559.5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #finaltext{
     position: absolute;
-    top: 175.762px;
-    left: 863.0305px;
+    top: 172px;
+    left: 865px;
     color: whitesmoke;
     animation: changeColour ease 10s;
     animation-fill-mode: forwards;
+
 }
 
 #line1{
@@ -65,7 +68,7 @@ p{
     position: absolute;
     top: 175.762px;
     /*left: 741.6564px;*/
-    left: 917.4184px;
+    left: 920px;
     border-top: 5px solid whitesmoke;
     width: 0px;
     animation: grow4 3s;
@@ -98,12 +101,73 @@ p{
 #final{
     position: absolute;
     top: 180.762px;
-    left: 853.0305px;
+    left: 852px;
     background-color: greenyellow;
-    width: 65.9932px;
-    height: 33.6627px;
+    width: 65.25px;
+    height: 34.25px;
     animation: fadeIn ease 10s;
     animation-fill-mode:forwards;
+}
+
+#navcontainer{
+    position: absolute;
+    top: 180px;
+    border-bottom: 1px solid whitesmoke;
+    width: 742px;
+    height: auto;
+    display: flex;
+    justify-content: stretch;
+    padding: 0px;
+}
+
+#headerbox{
+    width: 740px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+.header-item{
+    display: flex;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#nav-item{
+    display: flex;
+    margin-right:auto;
+    border-left: 1px solid whitesmoke;
+}
+
+.navigation-all{
+    position: relative;
+}
+
+.nav-dropdown{
+    display: none;
+    position: absolute;
+    z-index:1;
+    width: auto;
+}
+
+.nav-dropdown a{
+    display: block;
+    text-decoration: none;
+    color: whitesmoke;
+    padding-top: 50px;
+}
+
+.nav-dropdown a:hover{
+
+    color:greenyellow;
+    font-weight: bold;
+}
+
+.navigation-all:hover .nav-dropdown{
+    display: block;
 }
 
 @keyframes grow1{
@@ -127,20 +191,20 @@ p{
 
 @keyframes grow4{
     100%{
-        width: 174.0647px;
+        width: 176.0647px;
         left: 741.6564px;
     }
 }
 
 @keyframes grow5{
     100%{
-        height: 106.3741px;
+        height: 109px;
     }
 }
 
 @keyframes grow6{
     100%{
-        width: 67.6906px;
+        width: 70px;
     }
 }
 
