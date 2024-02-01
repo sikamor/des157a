@@ -2,7 +2,7 @@ article{
     width: 400px;
     margin: auto;
 }
-h1{
+h1, h2{
     text-align: center;
 }
 p{
