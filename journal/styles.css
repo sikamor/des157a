@@ -1,10 +1,27 @@
 article{
     width: 400px;
     margin: auto;
+    border-left: solid white 1px;
+    padding: 10px
 }
-h1, h2{
-    text-align: center;
+
+h1{
+    font-size: 36px;
+    font-family: 'Mate', serif;
+
 }
+
+h2{
+    font-family: 'Mate SC', serif;
+    color: lightgreen;
+}
+
 p{
     line-height: 1.7em;
+    font-family: 'Gothic A1', sans-serif;
 }
+body{
+    background-color: rgb(34, 33, 33);
+    color: white;
+}
+    
