@@ -39,3 +39,13 @@ img{
     height: 300px;
     object-fit: contain;
 }
+
+.smallPortrait{
+    width: 300px;
+    height: 400px;
+}
+
+.smallLandscape{
+    width: 400px;
+    height: 300px;
+}
