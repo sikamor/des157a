@@ -25,3 +25,17 @@ body{
     color: white;
 }
     
+a{
+    color: white;
+    font-style: none;
+}
+
+a:hover{
+    color: lightgreen
+}
+
+img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
