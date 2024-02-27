@@ -6,6 +6,8 @@
     const theImg = document.querySelector('section img');
     const writingSection = document.getElementById('writing');
 
+
+    //event listeners for the hotspots
     hotSpots.forEach(function (eachSpot) {
         eachSpot.addEventListener('mouseover', function (event) {
             zoomPhoto(event);
@@ -13,6 +15,7 @@
         });
     });
 
+    //zooms in on image
     function zoomPhoto(event){
         const thisCorner=event.target.id;
         console.log(thisCorner);
@@ -24,6 +27,7 @@
 
     }
 
+    //updates the text
     function updateWriting(event) {
         const thisCorner = event.target.id;
         switch (thisCorner){
@@ -33,6 +37,7 @@
         }
     }
 
+    //resets text to original
     hotSpots.forEach(function (eachSpot) {
         eachSpot.addEventListener('mouseout', function () {
             theImg.className = 'start';
