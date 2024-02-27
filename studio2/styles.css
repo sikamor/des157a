@@ -1,0 +1,97 @@
+body{
+    position: relative;
+    background-color: lightgray;
+    color: black;
+}
+
+p{
+    line-height: 1.5em;
+    font-size: 16.25px;
+    font-family: "Bitter", serif;
+}
+
+header{
+    text-align: center;
+    font-size: 56px;
+    border-bottom: black solid 2px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+h2{
+    font-family: "Space Grotesk", sans-serif;
+}
+
+#writing {
+    position: absolute;
+    left: 58vw;
+    width: 400px;
+    border-left: black solid 2px;
+    height: 800px;
+    padding: 5px;
+}
+
+#container {
+    width: 450px;
+    height: 800px;
+    overflow: hidden;
+    position: absolute;
+    margin: auto;
+    left: 25vw;
+}
+
+#container div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+#container img {
+    display: block;
+    position: absolute;
+    transition: all 2s ease;
+}
+
+#artwork {
+    top: 0;
+    left: 250px;
+}
+
+#luckycat {
+    left: 60%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+}
+
+#pothos {
+    bottom: 0;
+    left: 50px;
+}
+
+.start{
+    width: 450px;
+    left: 0;
+    top: 0;
+}
+
+.artwork,
+.luckycat,
+.pothos{
+    width: 900px;
+}
+
+.artwork {
+    left: -500px;
+    top: 0;
+}
+
+.luckycat {
+    left: 60%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+}
+
+.pothos {
+    left: -100px;
+    top: -800px;
+}
+
