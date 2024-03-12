@@ -23,12 +23,12 @@ p{
 
 #finaltext{
     position: absolute;
-    top: 172px;
+    top: 190px;
     left: 865px;
     color: whitesmoke;
     animation: changeColour ease 10s;
     animation-fill-mode: forwards;
-
+    text-decoration: none;
 }
 
 #line1{

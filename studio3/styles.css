@@ -1,0 +1,189 @@
+main{
+    background-color: white;
+    background-image: url(images/backdrop.svg);
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 1200px;
+    height: 742px;
+    border: black solid 3px;
+    margin-top: 30px;
+    position: relative;
+}
+
+body{
+    background-color: darkgrey;
+}
+
+#head1{
+    position:absolute;
+    left: 290px;
+    font-family: "Architype Renner W01 Md";
+    font-size: 42px;
+    margin: 0px;
+    color: #666666;
+}
+
+#head2{
+    position:absolute;
+    left: 285px;
+    font-family: "Architype Bayer W90";
+    font-size: 75px;
+    margin: 0px;
+    top: 55px;
+}
+
+#gamecontrol #startgame{
+    
+    position: absolute;
+    left: 290px;
+    top: 418px;
+    font-family: "Architype Renner W01 Md";
+    color: #666666;
+    border: 0px;
+    padding: 0px;
+    font-size: 100%;
+    background-color: white;
+    margin: 0px;
+    font-size: 21px;
+}
+
+#gamecontrol #startgame:hover{
+    
+    color: black;
+}
+
+#score {
+    position: absolute;
+    left: 290px;
+    top: 640px;
+    font-family: "Architype Renner W01 Md";
+    color: black;
+    border: 0px;
+    padding: 0px;
+    font-size: 100%;
+    margin: 0px;
+    font-size: 21px;
+}
+
+#game {
+    position: absolute;
+    left: 290px;
+    top: 390px;
+    font-family: "Architype Renner W01 Md";
+    color: #666666;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 21px;
+}
+
+#actions{
+    font-size: 28px;
+}
+
+#actions #roll{
+    position: absolute;
+    left: 764px;
+    top: 500px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Bayer W90";
+    border-radius: 0;
+    appearance: none;
+    
+}
+
+#actions #roll:hover{
+
+    color: #ffd44a;
+ 
+}
+
+#actions #rollagain{
+    position: absolute;
+    left: 775px;
+    top: 500px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Bayer W90";
+    border-radius: 0;
+    appearance: none;
+
+}
+
+#actions #rollagain:hover{
+   
+   color: #193189;
+    
+}
+
+#actions #pass{
+    position: absolute;
+    left: 775px;
+    top: 550px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Bayer W90";
+    border-radius: 0;
+    appearance: none;
+
+}
+
+#actions #pass:hover{
+   
+    color: #d9070a;
+}
+
+#game #die{
+    position: absolute;
+    left: 475px;
+    top: -90px;
+}
+
+.bigger{
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.biggerscore{
+    font-size: 24px;
+    color: #666666;
+}
+
+#scoretitle{
+    position: absolute;
+    top: -118px;
+    left: -285px;
+    font-size: 110px;
+}
+
+#quit{
+    position: absolute;
+    top: 700px;
+    left: 1150px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Renner W01 Md";
+    border-radius: 0;
+    appearance: none;
+    font-size: 24px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+#quit:hover{
+    color: #ffd44a;
+}
