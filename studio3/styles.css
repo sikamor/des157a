@@ -14,11 +14,16 @@ body{
     background-color: darkgrey;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 #head1{
     position:absolute;
     left: 290px;
     font-family: "Architype Renner W01 Md";
-    font-size: 42px;
+    font-size: 82px;
     margin: 0px;
     color: #666666;
 }
@@ -27,9 +32,9 @@ body{
     position:absolute;
     left: 285px;
     font-family: "Architype Bayer W90";
-    font-size: 75px;
+    font-size: 144px;
     margin: 0px;
-    top: 55px;
+    top: 115px;
 }
 
 #gamecontrol #startgame{
@@ -187,3 +192,229 @@ body{
 #quit:hover{
     color: #ffd44a;
 }
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+#rules{
+    position: absolute;
+    top: 368px;
+    left: 1000px;
+    width: 250px;
+    height: auto;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    line-height: 1.4em;
+    font-family: "Architype Renner W01 Md";
+}
+
+/* #rules article{
+    position: absolute;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 30px;
+    width: 30px;
+    height: auto;
+    top: 400px;
+    left: 1000px;
+   
+} */
+
+#rulebutton{
+    position: absolute;
+    top: 380px;
+    left: 1120px;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Renner W01 Md";
+    border-radius: 0;
+    appearance: none;
+    font-size: 24px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+#rulebutton:hover{
+    color: #193189;
+}
+
+/* main {
+    display: grid;
+    width: 1200px;
+    height: 741.641px;
+    grid-template-columns: 65.436px 218.386px 174.539px 283.612px 174.031px 43.722px 65.362px 109.427px 108.52px;
+    grid-template-rows: 174.532px 109.08px 174.388px 65.389px 43.031px 174.541px 174.641px;
+    grid-template-areas:
+    "one title three four five six seven eight nine"
+    ". . orders orders . . . . ."
+    ". . . . dice dice dice dice ."
+    ". . roll rollAgain pass . . . quit"
+    ". . . . . . . . quit"
+    ". . . score score score score . quit";
+    border: black solid 3px;
+    margin-top: 30px;
+  }
+  
+  #head1{
+    font-family: "Architype Renner W01 Md";
+    font-size: 42px;
+    margin: 0px;
+    color: #666666;
+    grid-area: title;
+}
+
+#gamecontrol{
+    display: grid;
+}
+
+#gamecontrol #startgame{
+    
+    grid-area: orders;
+    font-family: "Architype Renner W01 Md";
+    color: #666666;
+    border: 0px;
+    padding: 0px;
+    font-size: 100%;
+    background-color: white;
+    margin: 0px;
+    font-size: 21px;
+}
+
+#gamecontrol #startgame:hover{
+    
+    color: black;
+}
+
+#score {
+    grid-area: score;
+    font-family: "Architype Renner W01 Md";
+    color: black;
+    border: 0px;
+    padding: 0px;
+    font-size: 100%;
+    margin: 0px;
+    font-size: 21px;
+}
+
+#game {
+    grid-area:orders;
+    font-family: "Architype Renner W01 Md";
+    color: #666666;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-size: 21px;
+}
+
+#actions{
+    font-size: 28px;
+}
+
+#actions #roll{
+    grid-area:roll;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Bayer W90";
+    border-radius: 0;
+    appearance: none;
+    
+}
+
+#actions #roll:hover{
+
+    color: #ffd44a;
+ 
+}
+
+#actions #rollagain{
+    grid-area: rollAgain;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Bayer W90";
+    border-radius: 0;
+    appearance: none;
+
+}
+
+#actions #rollagain:hover{
+   
+   color: #193189;
+    
+}
+
+#actions #pass{
+    grid-area: pass;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Bayer W90";
+    border-radius: 0;
+    appearance: none;
+
+}
+
+#actions #pass:hover{
+   
+    color: #d9070a;
+}
+
+#game #die{
+    grid-area: die;
+}
+
+.bigger{
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.biggerscore{
+    font-size: 24px;
+    color: #666666;
+}
+
+#scoretitle{
+    grid-area: score;
+    font-size: 110px;
+}
+
+#quit{
+    grid-area: quit;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font-family: "Architype Renner W01 Md";
+    border-radius: 0;
+    appearance: none;
+    font-size: 24px;
+    transform: rotate(-90deg);
+    white-space: nowrap;
+}
+
+#quit:hover{
+    color: #ffd44a;
+}
+
+body{
+    display: grid;
+} */

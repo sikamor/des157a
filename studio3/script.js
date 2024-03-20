@@ -59,7 +59,7 @@
     })
 
     function setUpTurn(){
-        game.innerHTML = `<p>roll the dice for <span class=bigger> ${gameData.players[gameData.index]}</span></p>`;
+        game.innerHTML = `<p>turn: <span class=bigger> ${gameData.players[gameData.index]}</span></p>`;
         actionArea.innerHTML='<button id="roll">roll the dice</button>';
         document.getElementById('roll').addEventListener('click', function(){
             console.log('roll the dice!');
@@ -133,5 +133,38 @@
         ${gameData.score[0]}</span></p><p><span class=biggerscore>${gameData.players[1]}:
         ${gameData.score[1]}</span></p>`;
     }
+
+    document.querySelector('.open').addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('rules').className='showing';
+    });
+
+    document.querySelector('.close').addEventListener('click', function(event){
+        event.preventDefault();
+        document.getElementById('rules').className='hidden';
+        
+    });
+
+    function togglePopup() {
+        console.log('starting popup')
+        var popup = document.getElementById('rules');
+        var button = document.getElementById('rulebutton');
+        if (popup.classList.contains('hidden')) {
+            popup.classList.remove('hidden');
+            button.innerText = 'close rules';
+            console.log('opened popup');
+        } else {
+            console.log('closing popup');
+            popup.classList.add('hidden');
+            button.innerText = 'open rules';
+            console.log('closed popup');
+        }
+    }
+
+      document.getElementById('rulebutton').addEventListener('click', function(event) {
+        event.preventDefault();
+        togglePopup();
+    });
+
 
 })();
