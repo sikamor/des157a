@@ -121,6 +121,7 @@
 
             actionArea.innerHTML = '';
             document.getElementById('quit').innerHTML = 'start a new game';
+            document.getElementById('quit').inner
         }
         else{
             showCurrentScore();
