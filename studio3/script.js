@@ -29,6 +29,7 @@
     const game = document.querySelector('#game');
     const score = document.querySelector('#score');
     const actionArea = document.querySelector('#actions');
+    const diceSound = new Audio('sounds/dice-thrown.mp3');
 
     const gameData = {
         dice: ['images/1die.svg', 'images/2die.svg', 'images/3die.svg', 'images/4die.svg', 'images/5die.svg', 'images/6die.svg'],
@@ -68,6 +69,7 @@
     }
 
     function throwDice(){
+        diceSound.play();
         actionArea.innerHTML='';
         gameData.roll1 = Math.floor(Math.random() * 6) + 1; //using ceil could result in a zero
         gameData.roll2= Math.floor(Math.random() *6)+ 1;
